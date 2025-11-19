@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivest Publishing House</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Trivest Publishing House</h1>
+        <nav>
+            <a href="index.html">Homepage</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="menu.html">Book Catalogue</a>
+            <a href="authors.html">Our Authors</a>
+            <a href="submission.html">Manuscript Submission</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to Trivest Publishing</h2>
+        <p>Explore extraordinary stories. Share your vision with the world.</p>
+        <div class="cta-buttons">
+            <a href="menu.html" class="btn">Explore Our Book Catalogue</a>
+            <a href="submission.html" class="btn">Submit Your Manuscript</a>
+        </div>
+    </section>
+
+    <main>
+        <!-- Featured Books Section -->
+    <main>
+        <h3>Featured Books</h3>
+        <div class="featured-books">
+            <div class="book-card">
+                <img src="images/BookCover1.png" class="book-cover">
+                <h4>A Dangerous Affair</h4>
+                <p><em>Thandiwe Mokoena</em></p>
+                <p>A hidden legacy, fractured loyalties, and the rise of a reluctant queen in a kingdom at war.</p>
+                 <a href="book1.html" class="btn">Learn More</a>
+            </div>
+            <div class="book-card">
+                <img src="images/BookCover2.png" class="book-cover">
+                <h4>Dust over Durban</h4>
+                <p><em>Jaco van der Merwe</em></p>
+                <p>Crime, corruption, and survival collide in this gritty noir thriller set on South Africa’s east coast.</p>
+                 <a href="book1.html" class="btn">Learn More</a>
+            </div>
+            <div class="book-card">
+                <img src="images/BookCover3.png" class="book-cover">
+                <h4>The Star-Wrought Throne</h4>
+                <p><em>Elira Thorne</em></p>
+                <p>Epic fantasy meets rebellion and forgotten royalty in this breathtaking debut.</p>
+                 <a href="book1.html" class="btn">Learn More</a>
+            </div>
+            <div class="book-card">
+                <img src="images/BookCover4.png" class="book-cover">
+                <h4>Glass and Gunpowder</h4>
+                <p><em>Niko Stryde</em></p>
+                <p>Sky pirates, gears, and revolution — a steampunk adventure with teeth.</p>
+                 <a href="book1.html" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Latest News Section -->
+        <h3>Latest News</h3>
+        <div class="news-cards">
+            <div class="news-card">
+                <h4>New Release: Dust over Durban: New Horizons</h4>
+                <p>September 2025</p>
+            </div>
+            <div class="news-card">
+                <h4>Submissions Open for 2025 Fiction Titles</h4>
+                <p>Submit your story today and join our roster of talented authors.</p>
+            </div>
+            <div class="news-card">
+                <h4>Author Thandiwe Mokoena Wins Emerging Voices Award</h4>
+                <p>Celebrating rising talent in the literary world.</p>
+            </div>
+        </div>
+
+        <!-- Search Example -->
+        <h3>Search Our Books</h3>
+        <input type="text" id="searchInput" placeholder="Search books...">
+        <div class="search-results">
+            <div class="search-item">A Dangerous Affair</div>
+            <div class="search-item">Dust over Durban</div>
+            <div class="search-item">The Star-Wrought Throne</div>
+            <div class="search-item">Glass and Gunpowder</div>
+        </div>
+
+        <!-- Accordion Example -->
+        <h3>FAQs</h3>
+        <div class="accordion-section">
+            <div class="accordion-title">How do I submit my manuscript?</div>
+            <div class="accordion-content">Click on the "Submit Your Manuscript" button and fill out the form.</div>
+
+            <div class="accordion-title">What genres do you publish?</div>
+            <div class="accordion-content">We publish fiction, fantasy, romance, thrillers, and experimental works.</div>
+        </div>
+
+        <!-- Tabs Example -->
+        <h3>Author Spotlight</h3>
+        <div class="tabs">
+            <button class="tab-button" data-tab="tab1">Thandiwe Mokoena</button>
+            <button class="tab-button" data-tab="tab2">Jaco van der Merwe</button>
+            <button class="tab-button" data-tab="tab3">Niko Stryde</button>
+
+            <div id="tab1" class="tab-content">Thandiwe writes African fantasy with rich folklore and history.</div>
+            <div id="tab2" class="tab-content">Jaco specializes in urban thrillers and crime narratives.</div>
+            <div id="tab3" class="tab-content">Niko experiments with genre-bending storytelling.</div>
+        </div>
+
+        <!-- Lightbox Gallery -->
+        <h3>Gallery</h3>
+        <div class="gallery">
+            <img src="images/BookCover1.png" alt="A Dangerous Affair">
+            <img src="images/BookCover2.png" alt="Dust over Durban">
+            <img src="images/BookCover3.png" alt="The Star-Wrought Throne">
+        </div>
+        <div id="lightbox">
+            <span id="closeLightbox">&times;</span>
+            <img id="lightboxImg">
+        </div>
+
+        <!-- Map Example -->
+        <h3>Our Location</h3>
+        <div id="map" style="height: 300px;"></div>
+
+        <!-- Newsletter Signup -->
+        <h3>Join Our Newsletter</h3>
+        <p>Stay updated on new releases, author events, and submission calls.</p>
+        <form action="#" method="post" class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-columns">
+            <div>
+                <h4>Trivest Publishing House</h4>
+                <p>Discovering powerful voices and bringing compelling stories to readers across South Africa and the world.</p>
+            </div>
+
+            <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="authors.html">Our Authors</a></li>
+                    <li><a href="menu.html">Book Catalogue</a></li>
+                    <li><a href="submission.html">Submit Manuscript</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Get in Touch</h4>
+                <p><strong>Email:</strong><br>info@trivestpublishing.co.za</p>
+                <p><strong>Phone:</strong><br>+27 11 234 5678</p>
+                <p><strong>Address:</strong><br>123 Literary Lane,<br>Johannesburg, 2000</p>
+            </div>
+
+            <div>
+                <h4>Connect With Us</h4>
+                <a href="#" aria-label="Visit our Facebook page">Facebook</a>
+                <a href="#" aria-label="Follow us on Twitter">Twitter</a>
+                <a href="#" aria-label="Follow us on Instagram">Instagram</a>
+                <a href="#" aria-label="Connect on LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Trivest Publishing House. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+        </div>
+    </footer>
+</body>
+</html>

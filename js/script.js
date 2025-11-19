@@ -1,5 +1,5 @@
 /* =======================
-   Accordion Functionality (with smooth animation)
+   Accordion Functionality
 ======================= */
 document.querySelectorAll('.accordion-title').forEach(title => {
     title.addEventListener('click', () => {
@@ -15,8 +15,8 @@ document.querySelectorAll('.accordion-title').forEach(title => {
     });
 });
 
-/* =======================
-   Tabs Functionality (with fade effect)
+/* ====================
+   Tabs Functionality 
 ======================= */
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
@@ -36,9 +36,9 @@ tabButtons.forEach((button, index) => {
     });
 });
 
-/* =======================
+/* ===================
    Lightbox Gallery
-======================= */
+====================== */
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
 const closeLightbox = document.getElementById('closeLightbox');
@@ -62,7 +62,7 @@ if (lightbox) {
     });
 }
 
-/* =======================
+/* ====================
    Search Functionality
 ======================= */
 const searchInput = document.getElementById('searchInput');
@@ -84,9 +84,9 @@ if (searchInput) {
     });
 }
 
-/* =======================
+/* =============
    Leaflet Map
-======================= */
+================*/
 if (document.getElementById('map')) {
     const map = L.map('map').setView([-26.2041, 28.0473], 13);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -120,9 +120,9 @@ if (newsletterForm) {
     });
 }
 
-/* =======================
-   Contact & Submission Form Validation + AJAX
-======================= */
+/* ===============================================
+   Contact & Submission Form Validation With AJAX
+================================================== */
 const forms = document.querySelectorAll('.form-container form');
 forms.forEach(form => {
     form.addEventListener('submit', (e) => {
@@ -162,7 +162,7 @@ forms.forEach(form => {
     });
 });
 
-/* =======================
+/* ====================
    Modal Functionality
 ======================= */
 const modalTriggers = document.querySelectorAll('[data-modal-target]');
@@ -188,9 +188,9 @@ modals.forEach(modal => {
     });
 });
 
-/* =======================
+/* ===============================
    Dynamic Content (Books & News)
-======================= */
+================================== */
 function loadDynamicContent() {
     const booksContainer = document.getElementById('dynamicBooks');
     const newsContainer = document.getElementById('dynamicNews');
